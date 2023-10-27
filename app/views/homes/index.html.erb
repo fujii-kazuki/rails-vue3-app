@@ -1,0 +1,9 @@
+<%= javascript_pack_tag 'homes/index.js' %>
+<%= content_tag :div,
+  id: 'homesIndex',
+  data: {
+    title: @title,
+    description: @description,
+    contents: @contents
+  }.to_json do %>
+<% end %>
