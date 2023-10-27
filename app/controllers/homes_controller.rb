@@ -20,7 +20,11 @@ class HomesController < ApplicationController
           text: 'GitHub',
           url: 'https://github.com'
         }
-      ]
+      ],
+      inner_links: [{
+        label: '整数リテラル分類表',
+        url: url_for(action: 'index', controller: 'integer_literal_descriptions')
+      }]
     }
   end
 end
